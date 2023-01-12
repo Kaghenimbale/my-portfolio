@@ -29,3 +29,133 @@ header #menu ul a img {
   width: 40px;
   height: 40px;
 }
+
+.section-1 {
+  background: url(image/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-1 h2 {
+  font-size: 2.5rem;
+  color: #172b4d;
+  padding: 0 20px;
+  line-height: 1.4;
+}
+
+.section-1 p {
+  font-size: 1.2rem;
+  color: #344563;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.section-1 h3 {
+  font-weight: 100;
+  color: #6070ff;
+  padding: 0 20px;
+}
+
+.section-1 .nav-links ul {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+}
+
+.section-1 .nav-links ul li {
+  width: 30px;
+  height: 30px;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgb(248, 248, 248);
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 1px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.container .profile {
+  width: 320px;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.container .profile img {
+  width: 100%;
+  height: 100%;
+  border: 10px;
+  border-radius: 15px;
+}
+
+.card .card-description {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.card .card-description h3 {
+  font-size: 2rem;
+  color: #344563;
+}
+
+.card .card-description .profile-description {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card .card-description .profile-description p {
+  color: #7a869a;
+  font-weight: bold;
+}
+
+.card .card-description .profile-description h4 {
+  color: #344563;
+}
+
+.card .card-description .paragraph-description p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #344563;
+}
+
+.card .card-description .languages {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card .card-description .languages p {
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #396df2;
+  margin-bottom: 10px;
+}
+
+button a {
+  font-size: 1.1rem;
+  color: #396df2;
+}
