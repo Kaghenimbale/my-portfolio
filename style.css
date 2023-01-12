@@ -115,7 +115,7 @@ header #menu ul a img {
 .card .card-description .profile-description {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin: 20px 0;
 }
 
@@ -296,7 +296,7 @@ button a {
 .works {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .About-myself {
@@ -378,7 +378,7 @@ button a {
   border-bottom: 0.5px solid rgb(180, 180, 180);
 }
 
-.About-myself .framework p {
+.About-myself .framework li {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.5;
@@ -399,4 +399,13 @@ button a {
   color: #6070ff;
   border-radius: 10px;
   padding: 6px 8px;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+button a:hover {
+  color: white;
 }
