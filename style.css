@@ -292,3 +292,9 @@ button a {
 .section-3 button {
   width: 10rem;
 }
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 30px;
+}
