@@ -1,5 +1,4 @@
-/* stylelint-disable CssSyntaxError */
-/* stylelint-disable no-descending-specificity */
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +41,7 @@ header #menu ul a img {
   gap: 10px;
 }
 
-.section-1 h2 {
+.section-1 h1 {
   font-size: 2.5rem;
   color: #172b4d;
   padding: 0 20px;
