@@ -85,8 +85,7 @@ In order to run this project you need:
 <!--
 Example command:
 
-```sh
- gem install rails
+```
 ```
  -->
 
@@ -111,8 +110,9 @@ Install this project with:
 Example command:
 
 ```sh
-  cd my-project
-  gem install
+  cd <directory_name>
+  Open the index.html in the browser
+...
 ```
 --->
 
@@ -139,7 +139,7 @@ Example command:
 ```sh
   cd my-project
   npx hint .
-  npm install --save-dev hint@7.x
+  npx stylelint "**/*.{css,scss}"
 ```
 --->
 
