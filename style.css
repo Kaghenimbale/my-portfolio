@@ -1,5 +1,3 @@
-/* stylelint-disable CssSyntaxError */
-/* stylelint-disable no-descending-specificity */
 * {
   margin: 0;
   padding: 0;
@@ -19,13 +17,13 @@ header {
   padding: 15px 20px;
 }
 
-header #logo a {
+.logo a {
   font-size: 1.3rem;
   font-weight: 800;
   color: #6070ff;
 }
 
-header #menu ul a img {
+.menu ul a img {
   width: 40px;
   height: 40px;
 }
@@ -42,7 +40,18 @@ header #menu ul a img {
   gap: 10px;
 }
 
-.section-1 h2 {
+.about-me p {
+  font-size: 1.2rem;
+  color: #344563;
+  line-height: 1.5;
+}
+
+.about-me h3 {
+  font-weight: 100;
+  color: #6070ff;
+}
+
+.section-1 h1 {
   font-size: 2.5rem;
   color: #172b4d;
   padding: 0 20px;
@@ -112,35 +121,35 @@ header #menu ul a img {
   color: #344563;
 }
 
-.card .card-description .profile-description {
+.profile-description {
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 20px 0;
 }
 
-.card .card-description .profile-description p {
+.profile-description p {
   color: #7a869a;
   font-weight: bold;
 }
 
-.card .card-description .profile-description h4 {
+.profile-description h4 {
   color: #344563;
 }
 
-.card .card-description .paragraph-description p {
+.paragraph-description p {
   line-height: 1.5;
   margin-bottom: 20px;
   color: #344563;
 }
 
-.card .card-description .languages {
+.lang {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.card .card-description .languages p {
+.lang p {
   background-color: #ebebff;
   color: #6070ff;
   border-radius: 10px;
@@ -155,7 +164,7 @@ button {
   margin-bottom: 10px;
 }
 
-button a {
+.btn a {
   font-size: 1.1rem;
   color: #396df2;
 }
@@ -176,18 +185,7 @@ button a {
   line-height: 1.4;
 }
 
-.section-2 p {
-  font-size: 1.2rem;
-  color: #344563;
-  line-height: 1.5;
-}
-
-.section-2 h3 {
-  font-weight: 100;
-  color: #6070ff;
-}
-
-.section-2 .language-description {
+.language-description {
   font-size: 1.3rem;
   color: black;
 }
@@ -204,11 +202,11 @@ button a {
   height: 30px;
 }
 
-.section-2 .languages {
+.languages {
   padding: 15px;
 }
 
-.section-2 .languages .language {
+.language {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -225,7 +223,7 @@ button a {
   border-bottom: 0.5px solid rgb(180, 180, 180);
 }
 
-.section-2 .framework p {
+.framework p {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.5;
@@ -249,24 +247,24 @@ button a {
   gap: 40px;
 }
 
-.section-3 h2 {
+.last h2 {
   text-align: center;
   font-size: 2.5rem;
 }
 
-.section-3 p {
+.last p {
   font-size: 1.3rem;
   line-height: 1.5;
   color: #ebebff;
 }
 
-.section-3 .input {
+.input {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.section-3 .input .input-1 {
+.input-1 {
   width: 350px;
   height: 6vh;
   border-radius: 5px;
@@ -275,7 +273,7 @@ button a {
   box-shadow: 0 0 5px;
 }
 
-.section-3 .input #input-2 {
+.input-2 {
   width: 350px;
   height: 20vh;
   border-radius: 5px;
