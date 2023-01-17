@@ -167,6 +167,8 @@ button {
   border-radius: 5px;
   border: 1px solid #396df2;
   margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #396df2;
 }
 
 .btn a {
@@ -245,7 +247,7 @@ button {
 
 .section-3 {
   padding: 50px 20px;
-  background-image: url(image/contact\ form\ background\ shapes.svg);
+  background-image: url(image/contact\ form\ background\ shapes@2x.png);
   background-color: #6070ff;
   background-size: cover;
   display: flex;
@@ -297,10 +299,6 @@ button {
   font-size: 1.2rem;
 }
 
-.section-3 button {
-  width: 10rem;
-}
-
 .Works {
   padding: 20px;
   display: grid;
@@ -315,4 +313,35 @@ button:hover {
 button a:hover {
   background-color: #6070ff;
   color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+.input {
+  padding: 5px;
+  width: 85vw;
+  height: 5vh;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(237, 232, 232);
+}
+
+.msg {
+  width: 86vw;
+  padding: 5px;
+  height: 20vh;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(237, 232, 232);
 }
