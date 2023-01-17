@@ -345,3 +345,8 @@ fieldset {
   border-radius: 5px;
   border: 1px solid rgb(237, 232, 232);
 }
+
+.button {
+  width: 100%;
+  text-align: left;
+}

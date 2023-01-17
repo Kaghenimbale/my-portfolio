@@ -174,22 +174,22 @@
         </section>
 
         <section class="section-3">
-            <h2>Contacts me</h2>
+        <h2>Contacts me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
-            <form action="" method="post">
+            <form action="#" method="post">
                 <fieldset class="contact-form">
-                    <label for="text">
-                        <input type="text" class="input" name="username" maxlength="30" placeholder="Username">
+                    <label for="username">
+                        <input type="text" class="input" required name="username" maxlength="30" placeholder="Username">
                     </label>
                     <label for="email">
-                        <input type="email" class="input"  name="username" placeholder="name@domain.com">
+                        <input type="email" class="input" required name="email" placeholder="name@domain.com">
                     </label>
                     <label for="message">
                         <textarea name="message" class="msg" maxlength="500" placeholder="Write your message here"></textarea>
                     </label>
-                    <label for="button">
-                        <button type="submit" class="btn last-btn">Get in touch</button>
-                    </label>
+                    <div class="button">
+                      <button type="submit" class="btn last-btn">Get in touch</button>
+                    </div>
                 </fieldset>
 
             </form>
