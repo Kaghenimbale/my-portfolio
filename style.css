@@ -332,7 +332,7 @@ fieldset {
   height: 5vh;
   font-size: 1.2rem;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid rgb(237, 232, 232);
 }
 
@@ -342,7 +342,7 @@ fieldset {
   height: 20vh;
   font-size: 1.2rem;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid rgb(237, 232, 232);
 }
 
