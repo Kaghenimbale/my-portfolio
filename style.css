@@ -422,4 +422,91 @@ fieldset {
   .section-1 p {
     font-size: 1.5rem;
   }
+
+  .Works {
+    width: 100%;
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    padding: 1.5rem;
+    width: 80vw;
+    height: 50vh;
+    margin: 2rem auto;
+  }
+
+  .card:hover {
+    border: 1px solid #396df2;
+    box-shadow: 0 0 1px;
+    cursor: pointer;
+  }
+
+  .profile {
+    overflow: hidden;
+    width: 50%;
+    padding: 0 1.5rem 0 0;
+  }
+
+  .profile img {
+    object-fit: fill;
+  }
+
+  .card-description {
+    max-width: 50%;
+    max-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  .card-description h3 {
+    font-size: 2rem;
+    color: #091e42;
+  }
+
+  .profile-description h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .paragraph-description p {
+    font-size: 2vmin;
+    line-height: 1.5;
+  }
+
+  .ruby {
+    display: initial;
+    white-space: nowrap;
+  }
+
+  .card-1 {
+    order: 3;
+  }
+
+  .card-2 {
+    order: 4;
+  }
+
+  .card-3 {
+    order: 1;
+  }
+
+  .card-3 .ruby {
+    white-space: nowrap;
+  }
+
+  .card-4 {
+    order: 2;
+  }
+
+  .order-1 {
+    order: 2;
+    padding-left: 1rem;
+  }
+
+  .order-2 {
+    order: 1;
+  }
 }
