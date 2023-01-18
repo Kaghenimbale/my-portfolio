@@ -174,14 +174,29 @@
         </section>
 
         <section class="section-3">
-            <h2>Contacts me</h2>
+            <img src="image/Ellipse 12.png" class="ellipse-12" alt="Ellipse 12">
+            <img src="image/Ellipse 33.png" class="ellipse-33" alt="Ellipse 33">
+            <img src="image/Rectangle 4.png" class="rectangle-4" alt="Rectangle 4">
+            <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
-            <div class="input">
-                <input class="input-1" type="text">
-                <input class="input-1" type="text">
-                <input type="text" name="" class="input-2" placeholder="Write your message here">
-                <button class="btn" type="button"><a href="#">Get it Touch</a></button>
-            </div>
+            <form action="https://formspree.io/f/mknagznd" method="post">
+                <fieldset class="contact-form">
+                    <label for="username">
+                        <input type="text" class="input-contact" required name="username" maxlength="30" placeholder="Username">
+                    </label>
+                    <label for="email">
+                        <input type="email" class="input-contact" required name="email" placeholder="name@domain.com">
+                    </label>
+                    <label for="message">
+                        <textarea name="message" class="msg" required maxlength="500" placeholder="Write your message here"></textarea>
+                    </label>
+                    <div class="button">
+                      <button type="submit" class="btn last-btn">Get It Touch</button>
+                    </div>
+                </fieldset>
+                <img src="image/Ellipse 5.png" class="ellipse-5" alt="ellipse-5">
+                <img src="image/Rectangle 7.png" class="rectangle-7" alt="rectangle-7">
+            </form>
         </section>
     </main>
 
