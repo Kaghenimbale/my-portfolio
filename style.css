@@ -557,4 +557,22 @@ fieldset {
   .section-3 {
     padding: 0 10rem;
   }
+
+  .contact-form {
+    padding: 3rem 40rem;
+  }
+
+  .input-contact {
+    width: 35vw;
+    border-radius: 0;
+  }
+
+  .msg {
+    width: 35vw;
+    border-radius: 0;
+  }
+
+  .button {
+    text-align: center;
+  }
 }
