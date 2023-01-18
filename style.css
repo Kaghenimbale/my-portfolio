@@ -164,7 +164,7 @@ header {
 button {
   padding: 10px;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #396df2;
   margin-bottom: 10px;
   font-size: 1.2rem;
@@ -247,21 +247,21 @@ button {
 
 .section-3 {
   padding: 50px 20px;
-  background-image: url(image/contact\ form\ background\ shapes@2x.png);
-  background-color: #6070ff;
+  background-image: url(image/Contact\ me.png);
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   text-align: center;
-  gap: 40px;
+  gap: 20px;
   border-top-left-radius: 100px;
 }
 
 .section-3 h2 {
   text-align: center;
   font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 .section-3 p {
@@ -327,26 +327,53 @@ fieldset {
 }
 
 .input-contact {
-  padding: 5px;
-  width: 85vw;
+  padding: 5px 20px;
+  width: 75vw;
   height: 5vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid rgb(237, 232, 232);
 }
 
 .msg {
-  width: 86vw;
-  padding: 5px;
+  width: 75vw;
+  padding: 15px 18px;
   height: 20vh;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid rgb(237, 232, 232);
 }
 
 .button {
   width: 100%;
   text-align: left;
+  font-size: 1.1rem;
+}
+
+.ellipse-33 {
+  position: absolute;
+  rotate: 7deg;
+  right: -0.1rem;
+  margin-top: 24px;
+}
+
+.rectangle-4 {
+  position: absolute;
+  rotate: 3deg;
+  right: -0.2rem;
+}
+
+.rectangle-7 {
+  position: absolute;
+  right: 5rem;
+  rotate: 2deg;
+  margin-top: -80px;
+}
+
+.ellipse-5 {
+  position: absolute;
+  right: 7rem;
+  margin-top: -50px;
 }

@@ -219,7 +219,7 @@ Thank you Microverse and my friend who always explain me for preparing this proj
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/)) licensed.
+This project is [MIT](https://github.com/Kaghenimbale/my-portfolio/commit/55ba2a9f34c66b7803d1963fff7e3a1cdafbd12c)) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
