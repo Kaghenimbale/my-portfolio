@@ -17,6 +17,10 @@ header {
   padding: 15px 20px;
 }
 
+li {
+  cursor: pointer;
+}
+
 .logo a {
   font-size: 1.3rem;
   font-weight: 800;
@@ -54,11 +58,6 @@ header {
   line-height: 1.5;
 }
 
-.about-me h3 {
-  font-weight: 100;
-  color: #6070ff;
-}
-
 .section-1 h1 {
   font-size: 2.5rem;
   color: #172b4d;
@@ -73,7 +72,7 @@ header {
   line-height: 1.5;
 }
 
-.section-1 h3 {
+.let {
   font-weight: 400;
   color: #6070ff;
   padding: 0 20px;
@@ -107,10 +106,10 @@ header {
 
 .card {
   background-color: white;
-  box-shadow: 0 0 1px;
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 100px;
+  border: 1px solid rgb(230, 223, 223);
 }
 
 .card-description {
@@ -132,9 +131,7 @@ header {
 
 .profile-description p {
   color: #7a869a;
-  font-weight: 500;
   letter-spacing: 0;
-  font-size: 4vmin;
 }
 
 .profile-description h5 {
@@ -143,22 +140,20 @@ header {
 
 .paragraph-description p {
   line-height: 1.5;
-  margin-bottom: 20px;
   color: #344563;
 }
 
 .lang {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 .lang li {
   background-color: #ebebff;
   color: #6070ff;
-  font-size: 14px;
   border-radius: 10px;
-  padding: 2px 8px;
+  padding: 2px 5px;
 }
 
 button {
@@ -187,13 +182,12 @@ button {
 }
 
 .About-myself {
-  background: none;
   background-color: white;
   border-top-right-radius: 100px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 5rem;
 }
 
 .About-myself h2 {
@@ -203,7 +197,6 @@ button {
 }
 
 .About-myself p {
-  font-size: 1.2rem;
   color: #344563;
 }
 
@@ -247,7 +240,8 @@ button {
 
 .section-3 {
   padding: 50px 20px;
-  background-image: url(image/Contact\ me.png);
+  background-image: url(image/contact\ form\ background\ shapes@2x.png);
+  background-color: #6070ff;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -376,4 +370,209 @@ fieldset {
   position: absolute;
   right: 7rem;
   margin-top: -50px;
+}
+
+.nav-link {
+  display: none;
+}
+
+.ruby {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1rem 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  .nav-link {
+    display: initial;
+  }
+
+  .nav-link ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link li a {
+    padding-left: 5rem;
+    color: #344563;
+  }
+
+  .section-1 {
+    padding: 0 10rem 0 5rem;
+    width: 80vw;
+    margin: 0 auto;
+    background: url(image/Header\ bg.svg);
+  }
+
+  .section-1 h1 {
+    font-size: 4rem;
+  }
+
+  .section-1 p {
+    font-size: 1.5rem;
+  }
+
+  .Works {
+    width: 100%;
+    margin: auto;
+  }
+
+  .card {
+    display: flex;
+    padding: 1.5rem;
+    width: 80vw;
+    height: 50vh;
+    margin: 2rem auto;
+  }
+
+  .card:hover {
+    border: 1px solid #396df2;
+    box-shadow: 0 0 1px;
+    cursor: pointer;
+  }
+
+  .profile {
+    overflow: hidden;
+    width: 50%;
+    padding: 0 1.5rem 0 0;
+  }
+
+  .profile img {
+    object-fit: fill;
+  }
+
+  .card-description {
+    max-width: 50%;
+    max-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  .card-description h3 {
+    font-size: 2rem;
+    color: #091e42;
+  }
+
+  .profile-description h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .paragraph-description p {
+    font-size: 2vmin;
+    line-height: 1.5;
+  }
+
+  .ruby {
+    display: initial;
+    white-space: nowrap;
+  }
+
+  .card-1 {
+    order: 3;
+  }
+
+  .card-2 {
+    order: 4;
+  }
+
+  .card-3 {
+    order: 1;
+  }
+
+  .card-3 .ruby {
+    white-space: nowrap;
+  }
+
+  .card-4 {
+    order: 2;
+  }
+
+  .order-1 {
+    order: 2;
+    padding-left: 1rem;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  #About {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 5rem;
+    align-items: center;
+  }
+
+  .about-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+  }
+
+  .about-2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .language {
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .framework li {
+    width: 80%;
+    font-weight: 400;
+  }
+
+  .initial {
+    border-bottom: none;
+  }
+
+  .section-3 {
+    padding: 0 10rem;
+  }
+
+  .contact-form {
+    padding: 3rem 40rem;
+  }
+
+  .input-contact {
+    width: 35vw;
+    border-radius: 0;
+  }
+
+  .msg {
+    width: 35vw;
+    border-radius: 0;
+  }
+
+  .button {
+    text-align: center;
+  }
 }
