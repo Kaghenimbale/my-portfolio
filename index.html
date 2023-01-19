@@ -11,7 +11,14 @@
 <body>
     <!-- This is the begining of the header -->
     <header>
-            <h2 class="logo"><a href="#">Chris-Mk</a></h2>
+            <h2 class="logo"><a href="#section-1">Chris-Mk</a></h2>
+            <nav class="nav-link">
+                <ul>
+                    <li><a href="#Portofolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
             <div class="menu">
                 <ul><a href="#"><img src="image/Icon - Menu.png" alt="Humberger_menu"></a></ul>
             </div>
@@ -19,10 +26,10 @@
     <!-- This is the end of the header -->
     <!-- This is the begining of the main section  -->
     <main>
-        <section class="section-1">
-            <h1>I’m Chris Glad to see you!</h1>
+        <section id="section-1" class="section-1">
+            <h1>I’m Chris <br> Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-            <h3>LET'S CONNECT</h3>
+            <h3 class="let">LET'S CONNECT</h3>
                 <ul class="nav-links">
                     <li><a href="https://twitter.com/MbaleKagheni"><img src="image/twitter.svg" alt="twitter"></a></li>
                     <li><a href="https://www.linkedin.com/in/kagheni-mbale-401b90240/"><img src="image/Linkedin icon.svg" alt="Linkedin"></a></li>
@@ -32,8 +39,9 @@
                 </ul>
 
         </section>
-        <section class="Works">
-            <div class="card">
+        <section id="Portofolio" class="Works">
+            <div class="card card-1">
+                <!-- <div class="profile"><img src="image/Snapshoot Portfolio.png" alt="Snapshoot"></div> -->
                 <div class="profile"><img src="image/Snapshoot Portfolio.png" alt="Snapshoot"></div>
                 <div class="card-description">
                     <h3>Tonic</h3>
@@ -49,17 +57,18 @@
                     </div>
                     <ul class="lang">
                         <li>html</li>
+                        <li class="ruby">Ruby on rails</li>
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <button class="btn" type="button"><a href="#">See Project</a></button>
+                    <button class="btn" type="button">See Project</button>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="profile"><img src="image/Snapshoot Portfolio (1).png" alt="Snapshoot"></div>
-                <div class="card-description">
-                    <h3>Multi-Post <br> Stories</h3>
+            <div class="card card-2">
+                <div class="profile order-1"><img src="image/Snapshoot Portfolio (1).png" alt="Snapshoot"></div>
+                <div class="card-description order-2">
+                    <h3>Multi-Post Stories</h3>
                     <div class="profile-description">
                         <h5>CANOPY</h5>
                         <img src="image/Counter.png" alt="Counter">
@@ -72,14 +81,15 @@
                     </div>
                     <ul class="lang">
                         <li>html</li>
+                        <li class="ruby">Ruby on rails</li>
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <button class="btn" type="button"><a href="#">See Project</a></button>
+                    <button class="btn" type="button">See Project</button>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card-3">
                 <div class="profile"><img src="image/Snapshoot Portfolio (2).png" alt="Snapshoot"></div>
                 <div class="card-description">
                     <h3>Tonic</h3>
@@ -95,17 +105,18 @@
                     </div>
                     <ul class="lang">
                         <li>html</li>
+                        <li class="ruby">Ruby on rails</li>
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <button class="btn" type="button"><a href="#">See Project</a></button>
+                    <button class="btn" type="button">See Project</button>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="profile"><img src="image/Snapshoot Portfolio (3).png" alt="Snapshoot"></div>
-                <div class="card-description">
-                    <h3>Multi-Post <br> Stories</h3>
+            <div class="card card-4">
+                <div class="profile order-1"><img src="image/Snapshoot Portfolio (3).png" alt="Snapshoot"></div>
+                <div class="card-description order-2">
+                    <h3>Multi-Post Stories</h3>
                     <div class="profile-description">
                         <h5>CANOPY</h5>
                         <img src="image/Counter.png" alt="Counter">
@@ -118,18 +129,20 @@
                     </div>
                     <ul class="lang">
                         <li>html</li>
+                        <li class="ruby">Ruby on rails</li>
                         <li>css</li>
                         <li>javascript</li>
                     </ul>
-                    <button class="btn" type="button"><a href="#">See Project</a></button>
+                    <button class="btn" type="button">See Project</button>
                 </div>
             </div>
         </section>
 
-        <section class="About-myself">
-            <h2>About <br> Myself</h2>
-            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-            <h3>LET'S CONNECT</h3>
+        <section id="About" class="About-myself main-about">
+            <div class="about-1">
+                <h2>About <br> Myself</h2>
+                <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                <h3 class="let">LET'S CONNECT</h3>
                 <ul class="nav-links">
                     <li><a href="https://twitter.com/MbaleKagheni"><img src="image/twitter.svg" alt="twitter"></a></li>
                     <li><a href="https://www.linkedin.com/in/kagheni-mbale-401b90240/"><img src="image/Linkedin icon.svg" alt="Linkedin"></a></li>
@@ -137,46 +150,48 @@
                     <li><a href="https://github.com/Kaghenimbale"><img src="image/github.svg" alt="github"></a></li>
                     <li><a href="#"><img src="image/angellist.svg" alt="Vector"></a></li>
                 </ul>
-
-            <div class="section-2-description">
-                <button class="btn" type="button"><a href="#">Get my resume</a></button>
+                <div class="section-2-description">
+                    <button class="btn" type="button">Get my resume</button>
+                </div>
             </div>
 
-            <ul class="framework">
-                <li>languages</li>
-                <div class="vector"><img src="image/Icon - Chevron - Down - Larger.png" alt=""></div>
-            </ul>
-
-            <ul class="languages">
-                <li class="language">
-                    <div class="languages-logo"><img src="image/Ellipse 1.png" alt="javascript"></div>
-                    <p>javascript</p>
-                </li>
-                <li class="language">
-                    <div class="languages-logo"><img src="image/Ellipse 2.png" alt="javascript"></div>
-                    <p>HTML</p>
-                </li>
-                <li class="language">
-                    <div class="languages-logo"><img src="image/Ellipse 3.png" alt="javascript"></div>
-                    <p>CSS</p>
-                </li>
-            </ul>
-
-            <ul class="framework">
-                <li>Frameworks</li>
-                <div class="vector"><img src="image/Icon - Chevron - Right - Larger.png" alt=""></div>
-            </ul>
-
-            <ul class="framework">
-                <li>Skills</li>
-                <div class="vector"><img src="image/Icon - Chevron - Right - Larger.png" alt=""></div>
-            </ul>
+            <div class="about-2">
+                <ul class="framework initial">
+                    <li>languages</li>
+                    <div class="vector"><img src="image/Icon - Chevron - Down - Larger.png" alt=""></div>
+                </ul>
+    
+                <ul class="languages">
+                    <li class="language">
+                        <div class="languages-logo"><img src="image/Ellipse 1.png" alt="javascript"></div>
+                        <p>javascript</p>
+                    </li>
+                    <li class="language">
+                        <div class="languages-logo"><img src="image/Ellipse 2.png" alt="javascript"></div>
+                        <p>HTML</p>
+                    </li>
+                    <li class="language">
+                        <div class="languages-logo"><img src="image/Ellipse 3.png" alt="javascript"></div>
+                        <p>CSS</p>
+                    </li>
+                </ul>
+    
+                <ul class="framework">
+                    <li>Frameworks</li>
+                    <div class="vector"><img src="image/Icon - Chevron - Right - Larger.png" alt=""></div>
+                </ul>
+    
+                <ul class="framework">
+                    <li>Skills</li>
+                    <div class="vector"><img src="image/Icon - Chevron - Right - Larger.png" alt=""></div>
+                </ul>
+            </div>
         </section>
 
-        <section class="section-3">
-            <img src="image/Ellipse 12.png" class="ellipse-12" alt="Ellipse 12">
-            <img src="image/Ellipse 33.png" class="ellipse-33" alt="Ellipse 33">
-            <img src="image/Rectangle 4.png" class="rectangle-4" alt="Rectangle 4">
+        <section id="Contact" class="section-3">
+            <img src="image/Ellipse 12.png" class="ellipse-12 el" alt="Ellipse 12">
+            <img src="image/Ellipse 33.png" class="ellipse-33 el" alt="Ellipse 33">
+            <img src="image/Rectangle 4.png" class="rectangle-4 el" alt="Rectangle 4">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
             <form action="https://formspree.io/f/mknagznd" method="post">
@@ -194,8 +209,8 @@
                       <button type="submit" class="btn last-btn">Get It Touch</button>
                     </div>
                 </fieldset>
-                <img src="image/Ellipse 5.png" class="ellipse-5" alt="ellipse-5">
-                <img src="image/Rectangle 7.png" class="rectangle-7" alt="rectangle-7">
+                <img src="image/Ellipse 5.png" class="ellipse-5 el" alt="ellipse-5">
+                <img src="image/Rectangle 7.png" class="rectangle-7 el" alt="rectangle-7">
             </form>
         </section>
     </main>
