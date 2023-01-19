@@ -43,9 +43,10 @@ li {
 }
 
 .section-1 {
-  background: url(image/header-shapes\ mobile.png);
+  background: url(image/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 80vh;
   width: 100%;
   display: flex;
@@ -382,6 +383,10 @@ fieldset {
   display: none;
 }
 
+.el {
+  display: initial;
+}
+
 .about-1 {
   display: flex;
   flex-direction: column;
@@ -426,6 +431,10 @@ fieldset {
     width: 80vw;
     margin: 0 auto;
     background: url(image/Header\ bg.svg);
+    border-bottom-left-radius: 100px;
+    background-color: white;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
   }
 
   .section-1 h1 {
@@ -522,19 +531,20 @@ fieldset {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5rem 8rem;
+    padding: 5rem 9rem;
+    margin: auto;
     align-items: center;
   }
 
   .about-1 {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 50%;
     gap: 1rem;
   }
 
   .about-2 {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -562,6 +572,18 @@ fieldset {
 
   .initial {
     border-bottom: none;
+  }
+
+  .section-3 {
+    background: url(image/contact\ form\ background\ shapes.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #6070ff;
+  }
+
+  .el {
+    display: none;
   }
 
   .section-3 p {
