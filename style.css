@@ -62,11 +62,13 @@ li {
   line-height: 1.5;
 }
 
-.section-1 h1 {
+h1 {
   font-size: 2.5rem;
   color: #172b4d;
   padding: 0 20px;
   line-height: 1.4;
+  position: relative;
+  width: max-content;
 }
 
 .section-1 p {
@@ -114,6 +116,7 @@ li {
   padding: 20px;
   margin-bottom: 100px;
   border: 1px solid rgb(230, 223, 223);
+  transition: box-shadow;
 }
 
 .card-description {
@@ -140,6 +143,12 @@ li {
 
 .profile-description h5 {
   color: #344563;
+}
+
+.profile:hover {
+  transform: scale(1.04);
+  transition: transform;
+  transition-duration: 2s;
 }
 
 .paragraph-description p {
@@ -309,11 +318,16 @@ button:hover {
   background-color: #6070ff;
   color: white;
   cursor: pointer;
+  box-shadow: 0 0 30px #6070ff;
+  transition-property: background, color, box-shadow;
+  transition-duration: 1s;
 }
 
 button:active {
   background-color: #2230d2;
   color: white;
+  transition: all;
+  transition: 2s;
 }
 
 button:disabled {
@@ -451,6 +465,39 @@ fieldset {
 
   .section-1 h1 {
     font-size: 3rem;
+  }
+
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  h1::before {
+    background: #fff;
+    animation: writer 6s steps(26) 1s forwards;
+  }
+
+  h1::after {
+    width: 0.125em;
+    background-color: black;
+    animation: writer 6s steps(26) 1s forwards, blink 500ms steps(26) forwards infinite;
+  }
+
+  @keyframes writer {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
   }
 
   .section-1 p {
