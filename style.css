@@ -467,39 +467,6 @@ fieldset {
     font-size: 3rem;
   }
 
-  h1::before,
-  h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  h1::before {
-    background: #fff;
-    animation: writer 6s steps(26) 1s forwards;
-  }
-
-  h1::after {
-    width: 0.125em;
-    background-color: black;
-    animation: writer 6s steps(26) 1s forwards, blink 500ms steps(26) forwards infinite;
-  }
-
-  @keyframes writer {
-    to {
-      left: 100%;
-    }
-  }
-
-  @keyframes blink {
-    to {
-      background-color: transparent;
-    }
-  }
-
   .section-1 p {
     font-size: 1.5rem;
     width: 70%;
