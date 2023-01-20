@@ -30,12 +30,6 @@ li {
   color: #6070ff;
 }
 
-.link:hover {
-  padding-bottom: 1rem;
-  transition-property: padding-bottom;
-  transition-duration: 2s;
-}
-
 .profile img {
   object-fit: cover;
   width: 100%;
