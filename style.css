@@ -43,6 +43,13 @@ li {
   height: 40px;
 }
 
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
 .section-1 {
   background: url(image/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
@@ -62,11 +69,13 @@ li {
   line-height: 1.5;
 }
 
-.section-1 h1 {
+h1 {
   font-size: 2.5rem;
   color: #172b4d;
+  width: max-content;
   padding: 0 20px;
   line-height: 1.4;
+  position: relative;
 }
 
 .section-1 p {
@@ -86,7 +95,7 @@ li {
   display: flex;
   padding: 0 20px;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   height: 50px;
 }
 
@@ -165,7 +174,7 @@ li {
   background-color: #ebebff;
   color: #6070ff;
   border-radius: 10px;
-  padding: 2px 5px;
+  padding: 2px 10px;
 }
 
 button {
@@ -175,11 +184,6 @@ button {
   border: 1px solid #396df2;
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #396df2;
-}
-
-.btn a {
-  font-size: 1.1rem;
   color: #396df2;
 }
 
@@ -426,6 +430,7 @@ fieldset {
     left: 0;
     right: 0;
     background-color: white;
+    z-index: 2;
   }
 
   header .menu {
@@ -463,6 +468,39 @@ fieldset {
 
   .section-1 h1 {
     font-size: 3rem;
+  }
+
+  h1::before,
+  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  h1::before {
+    background: #fff;
+    animation: writer 6s steps(26) 1s forwards;
+  }
+
+  h1::after {
+    width: 0.125em;
+    background-color: black;
+    animation: writer 6s steps(26) 1s forwards, blink 500ms steps(26) forwards infinite;
+  }
+
+  @keyframes writer {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background-color: transparent;
+    }
   }
 
   .section-1 p {
