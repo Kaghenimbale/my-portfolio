@@ -450,15 +450,6 @@ fieldset {
     color: #344563;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  .paragraph-1 {
-    font-size: 1.5rem;
-    width: 70%;
-  }
-
   .section-1 {
     padding: 0 10rem;
     margin: auto;
@@ -471,6 +462,15 @@ fieldset {
     margin-bottom: 5rem;
     margin-top: 4rem;
     height: 100vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .paragraph-1 {
+    font-size: 1.5rem;
+    width: 70%;
   }
 
   .Works {
