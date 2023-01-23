@@ -63,7 +63,9 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 >
-- This project has not been deployed.
+- This project can be access using the link down below:
+
+  https://kaghenimbale.github.io/my-portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
