@@ -65,7 +65,7 @@
 >
 - This project live can be accessed using the link down below:
 
-    https://kaghenimbale.github.io/my-portfolio/
+  https://kaghenimbale.github.io/my-portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
