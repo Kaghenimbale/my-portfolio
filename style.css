@@ -411,7 +411,7 @@ fieldset {
 }
 
 .nav-link {
-  display: initial;
+  display: none;
   background: rgba(96, 112, 255, 1);
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
