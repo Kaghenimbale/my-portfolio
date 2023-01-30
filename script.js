@@ -1,11 +1,11 @@
-let navLink = document.querySelector('.nav-link');
-let menu = document.querySelector('.menu-Icon');
-let close = document.querySelector('.closeIcon')
+const navLink = document.querySelector('.nav-link');
+const menu = document.querySelector('.menu-Icon');
+const close = document.querySelector('.closeIcon');
 
-menu.addEventListener('click', ()=>{
-    navLink.style.marginLeft=0;
-})
+menu.addEventListener('click', () => {
+  navLink.style.marginLeft = 0;
+});
 
-close.addEventListener('click', ()=>{
-    navLink.style.marginLeft = '-1000px';
-})
+close.addEventListener('click', () => {
+  navLink.style.marginLeft = '-1000px';
+});
