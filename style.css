@@ -414,7 +414,6 @@ fieldset {
   margin-left: -1000px;
   transition-property: margin-left;
   transition-duration: 0.8s;
-  transition-delay: 0.2s;
   background: rgba(96, 112, 255, 1);
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
