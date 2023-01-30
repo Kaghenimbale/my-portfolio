@@ -411,7 +411,10 @@ fieldset {
 }
 
 .nav-link {
-  display: none;
+  margin-left: -1000px;
+  transition-property: margin-left;
+  transition-duration: 0.8s;
+  transition-delay: 0.2s;
   background: rgba(96, 112, 255, 1);
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
@@ -420,6 +423,7 @@ fieldset {
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .nav-link ul {
@@ -437,6 +441,7 @@ fieldset {
 }
 
 .closeIcon {
+  display: initial;
   position: absolute;
   right: 2rem;
   top: 2rem;
@@ -463,15 +468,32 @@ fieldset {
 
   .nav-link {
     display: initial;
+    background: none;
+    backdrop-filter: none;
+    height: initial;
+    width: initial;
+    position: initial;
   }
 
   .nav-link ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-top: 0;
+    gap: 0;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .nav-link a {
+    padding: 0;
   }
 
   .nav-link li a {
     font-size: 1.3rem;
+    font-weight: 400;
     padding-left: 5rem;
     color: #344563;
   }

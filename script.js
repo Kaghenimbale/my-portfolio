@@ -1,15 +1,11 @@
-let navLink = document.getElementsByClassName('nav-link');
-let menu = document.getElementsByClassName('menu');
-let close = document.getElementsByClassName('closeIcon')
-console.log(navLink);
-console.log(menu);
-console.log(close);
-console.log('sunga');
+let navLink = document.querySelector('.nav-link');
+let menu = document.querySelector('.menu-Icon');
+let close = document.querySelector('.closeIcon')
 
-menu.addEventListeners('click', ()=>{
-    navLink.style.display = 'initial';
+menu.addEventListener('click', ()=>{
+    navLink.style.marginLeft=0;
 })
 
-close.addEventListeners('click', ()=>{
-    navLink.style.display = 'none';
+close.addEventListener('click', ()=>{
+    navLink.style.marginLeft = '-1000px';
 })
