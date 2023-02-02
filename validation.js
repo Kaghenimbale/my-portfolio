@@ -4,7 +4,7 @@ const Alertmessage = document.getElementById('text');
 
 form.addEventListener('submit', (e) => {
   if (inputmail.value !== inputmail.value.toLowerCase()) {
-    Alertmessage.innerText = 'Invalid Email Address';
+    Alertmessage.textContent = 'Invalid Email Address';
     Alertmessage.style.color = 'red';
     inputmail.style.border = ' 2px solid red';
     inputmail.style.boxShadow = '1px 1px 10px red';
@@ -20,3 +20,4 @@ form.addEventListener('submit', (e) => {
     inputmail.style.border = '1px solid #16d64d';
   }
 });
+

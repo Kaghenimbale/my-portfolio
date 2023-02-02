@@ -799,3 +799,9 @@ fieldset {
   padding: 0.1rem 0.5rem;
   border-radius: 1rem;
 }
+
+#text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
