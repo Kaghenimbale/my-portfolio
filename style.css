@@ -30,12 +30,30 @@ li {
   color: #6070ff;
 }
 
-.profile img {
-  object-fit: cover;
+/* POPUP */
+
+.imgPop img {
   width: 100%;
-  height: 100%;
-  border: 10px;
-  border-radius: 15px;
+}
+
+.Works {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgb(227, 222, 222);
+  border-radius: 1rem;
+}
+
+.projectImg img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .menu ul a img {
@@ -63,15 +81,16 @@ li {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #172b4d;
   padding: 0 20px;
 }
 
 .section-1 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #344563;
   padding: 0 20px;
+  margin: 1rem 0;
 }
 
 .let {
@@ -84,7 +103,7 @@ h1 {
   display: flex;
   padding: 0 20px;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
   height: 50px;
 }
 
@@ -106,50 +125,25 @@ h1 {
   background-color: rgb(248, 248, 248);
 }
 
-.card {
-  background-color: white;
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 100px;
-  border: 1px solid rgb(230, 223, 223);
-  transition: box-shadow;
-}
-
-.card-description {
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-.card-description h3 {
-  font-size: 2rem;
-  color: #344563;
-}
-
 .profile-description {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
   margin: 20px 0;
-}
-
-.profile-description p {
-  color: #7a869a;
-  letter-spacing: 0;
 }
 
 .profile-description h5 {
   color: #344563;
 }
 
-.profile:hover {
+.projectImg:hover {
   transform: scale(1.04);
   transition: transform;
   transition-duration: 2s;
 }
 
 .paragraph-description p {
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 1.2rem;
   color: #344563;
 }
 
@@ -157,6 +151,7 @@ h1 {
   display: flex;
   gap: 10px;
   padding: 20px 0;
+  flex-wrap: wrap;
 }
 
 .lang li {
@@ -164,6 +159,7 @@ h1 {
   color: #6070ff;
   border-radius: 10px;
   padding: 2px 5px;
+  white-space: nowrap;
 }
 
 button {
@@ -302,12 +298,6 @@ button {
   color: #b3bac5;
   padding: 0 20px;
   font-size: 1.2rem;
-}
-
-.Works {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 button:hover {
@@ -523,17 +513,49 @@ fieldset {
     margin: auto;
   }
 
-  .card {
-    display: flex;
-    padding: 1.5rem;
+  .Project {
     width: 80vw;
-    margin: 2rem auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 2rem;
   }
 
-  .card:hover {
-    border: 1px solid #396df2;
-    box-shadow: 0 0 1px;
-    cursor: pointer;
+  .projectImg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectImg img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .ruby {
+    display: initial;
+  }
+
+  .projectdescription {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .projectdescription h3 {
+    font-size: 2rem;
+  }
+
+  .profile-description h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .projectdescription p {
+    font-size: 1rem;
+    color: #6b778c;
   }
 
   .profile {
@@ -546,57 +568,11 @@ fieldset {
     object-fit: contain;
   }
 
-  .card-description {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem 0 0 1.5rem;
-    gap: 0.5rem;
-  }
-
-  .card-description h3 {
-    font-size: 2rem;
-    color: #091e42;
-  }
-
-  .profile-description h5 {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
-  .paragraph-description p {
-    font-size: 2vmin;
-    line-height: 1.5;
-  }
-
-  .ruby {
-    display: initial;
-    white-space: nowrap;
-  }
-
-  .card-1 {
-    order: 3;
-  }
-
-  .card-2 {
-    order: 4;
-  }
-
-  .card-3 {
-    order: 1;
-  }
-
-  .card-4 {
+  .inverse {
     order: 2;
   }
 
-  .order-1 {
-    order: 2;
-    padding-left: 1rem;
-  }
-
-  .order-2 {
+  .nromal {
     order: 1;
   }
 
@@ -680,4 +656,146 @@ fieldset {
   .button {
     text-align: center;
   }
+
+  /* POPUP */
+
+  .container {
+    position: absolute;
+    background: #fff;
+    width: 50vw;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .closePop {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .imgPop {
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .imgPop img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .popUp2 {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .paragraph-pop {
+    width: 60%;
+  }
+
+  .para2-pop {
+    width: 40%;
+  }
+
+  .poplang {
+    flex-wrap: wrap;
+  }
+
+  .poplang li {
+    white-space: nowrap;
+  }
+}
+
+.cancel {
+  display: none;
+}
+
+.Popup {
+  background: rgba(171, 192, 246, 0.6);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Popup.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.containerPop {
+  position: absolute;
+  background: #fff;
+  width: 70vw;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.closePop {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.popuph3 {
+  font-size: 1.5rem;
+}
+
+.popuph5 {
+  font-size: 1rem;
+}
+
+.popupP {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.imgPop {
+  width: 100%;
+  object-fit: cover;
+}
+
+.livebtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-description-pop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.popupPara {
+  font-size: 1em;
+  margin: 1rem 0;
+  color: #344563;
+}
+
+.poplang {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.li {
+  background: #ebebff;
+  color: #6070ff;
+  font-size: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
 }
