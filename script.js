@@ -209,3 +209,18 @@ const renderPopup = (project) => {
   popup.classList.add('show');
   popup.append(container);
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  const projectBtns = document.querySelectorAll('.btn_open');
+  const handleClick = (e) => {
+    const projectId = e.target.dataset.project;
+    const projectData = projects.find((project) => project.id === projectId);
+    renderPopup(projectData);
+  };
+
+  Array.from(projectBtns).forEach((btn) => {
+    btn.addEventListener('click', handleClick);
+  });
+});
+
+hiddepopup();
