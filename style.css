@@ -810,4 +810,5 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: rgb(254, 87, 87);
 }
