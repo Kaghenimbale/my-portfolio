@@ -1,7 +1,7 @@
 const inputemail = document.getElementById('email');
 const inputname = document.getElementById('name');
 const formst = document.getElementById('form');
-
+const arr = [];
 const Localstore = (e) => {
   e.preventDefault();
   const name = inputname.value;
@@ -13,6 +13,8 @@ const Localstore = (e) => {
   obj.Email = email;
 
   const result = JSON.stringify(obj);
-  localStorage.setItem('data', result);
+  arr.push(result);
+  localStorage.setItem('data', JSON.stringify(arr));
 };
+
 formst.addEventListener('submit', Localstore);
