@@ -103,13 +103,14 @@
             <img src="image/Rectangle 4.png" class="rectangle-4 el" alt="Rectangle 4">
             <h2>Contact me</h2>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it</p>
-            <form action="https://formspree.io/f/mknagznd" method="post">
+            <form id="form" action="https://formspree.io/f/mknagznd" method="post">
                 <fieldset class="contact-form">
                     <label for="username">
                         <input type="text" class="input-contact" required name="username" maxlength="30" placeholder="Username">
                     </label>
                     <label for="email">
-                        <input type="email" class="input-contact" required name="email" placeholder="name@domain.com">
+                        <small id="text"></small>
+                        <input type="email" class="input-contact" id="email" required name="email" placeholder="name@domain.com">
                     </label>
                     <label for="message">
                         <textarea name="message" class="msg" required maxlength="500" placeholder="Write your message here"></textarea>
@@ -127,5 +128,6 @@
     <!-- This is the end of the main section  -->
 
     <script src="script.js"></script>
+    <script src="validation.js"></script>
 </body>
 </html>
