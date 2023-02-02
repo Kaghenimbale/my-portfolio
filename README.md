@@ -165,6 +165,12 @@ this project has not been deployed
 - Twitter: [@twitterhandle](https://twitter.com/MbaleKagheni)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kagheni-mbale-401b90240/)
 
+👤 **Author2**
+
+- GitHub: [@sunga12](https://github.com/sunga12)
+- Twitter: [@OfficialAseT](https://twitter.com/OfficialAseT)
+- LinkedIn: [Sungabanja Thawethe](https://www.linkedin.com/in/sungabanja-thawethe-b3419b142/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
