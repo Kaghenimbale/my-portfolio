@@ -779,15 +779,15 @@ fieldset {
 }
 
 .popupPara {
-  font-size: 1em;
-  margin: 1rem 0;
+  font-size: 0.7em;
+  margin: 0.5rem 0;
   color: #344563;
 }
 
 .poplang {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   align-items: center;
   gap: 1rem;
 }
@@ -795,7 +795,7 @@ fieldset {
 .li {
   background: #ebebff;
   color: #6070ff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.1rem 0.5rem;
   border-radius: 1rem;
 }
