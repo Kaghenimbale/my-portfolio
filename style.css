@@ -81,13 +81,12 @@ li {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #172b4d;
   padding: 0 20px;
 }
 
 .section-1 p {
-  font-size: 1.2rem;
   color: #344563;
   padding: 0 20px;
   margin: 1rem 0;
@@ -779,15 +778,15 @@ fieldset {
 }
 
 .popupPara {
-  font-size: 1em;
-  margin: 1rem 0;
+  font-size: 0.7em;
+  margin: 0.5rem 0;
   color: #344563;
 }
 
 .poplang {
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   align-items: center;
   gap: 1rem;
 }
@@ -795,7 +794,7 @@ fieldset {
 .li {
   background: #ebebff;
   color: #6070ff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.1rem 0.5rem;
   border-radius: 1rem;
 }
@@ -810,4 +809,5 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: rgb(254, 87, 87);
 }

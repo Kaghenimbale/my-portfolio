@@ -6,8 +6,8 @@ form.addEventListener('submit', (e) => {
   if (inputmail.value !== inputmail.value.toLowerCase()) {
     Alertmessage.textContent = 'Invalid Email Address';
     Alertmessage.style.color = 'red';
-    inputmail.style.border = ' 2px solid red';
-    inputmail.style.boxShadow = '1px 1px 10px red';
+    inputmail.style.border = ' 2px solid rgb(254, 87, 87)';
+    inputmail.style.boxShadow = '1px 1px 10px rgb(254, 87, 87)';
 
     setTimeout(() => {
       Alertmessage.style.display = 'none';
@@ -20,4 +20,3 @@ form.addEventListener('submit', (e) => {
     inputmail.style.border = '1px solid #16d64d';
   }
 });
-

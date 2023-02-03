@@ -106,14 +106,14 @@
             <form id="form" action="https://formspree.io/f/mknagznd" method="post">
                 <fieldset class="contact-form">
                     <label for="username">
-                        <input type="text" class="input-contact" required name="username" maxlength="30" placeholder="Username">
+                        <input type="text" id="name" class="input-contact" required name="username" maxlength="30" placeholder="Username">
                     </label>
                     <label id="validation" for="email">
                         <small id="text"></small>
                         <input type="email" class="input-contact" id="email" required name="email" placeholder="name@domain.com">
                     </label>
                     <label for="message">
-                        <textarea name="message" class="msg" required maxlength="500" placeholder="Write your message here"></textarea>
+                        <textarea name="message" id="textarea" class="msg" required maxlength="500" placeholder="Write your message here"></textarea>
                     </label>
                     <div class="button">
                       <button type="submit" class="btn last-btn">Get It Touch</button>
@@ -129,5 +129,6 @@
 
     <script src="script.js"></script>
     <script src="validation.js"></script>
+    <script src="Storage.js"></script>
 </body>
 </html>
