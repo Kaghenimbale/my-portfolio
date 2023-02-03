@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectBtns = document.querySelectorAll('.btn_open');
   const handleClick = (e) => {
     const projectId = e.target.dataset.project;
-    const projectData = projects.find((project) => project.id === projectId);
+    const projectData = projects.find((project) => project === projectId);
     renderPopup(projectData);
   };
 
